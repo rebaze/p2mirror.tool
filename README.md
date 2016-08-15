@@ -4,7 +4,10 @@ Standalone Eclipse Mars based P2 Mirror Application
 # Installation
 
 ## Install with Homebrew
-	brew install p2mirror
+
+Just `brew tap rebaze/repo` and then `brew install p2mirror`.
+
+If the formula conflicts with one from Homebrew/homebrew or another tap, you can `brew install rebaze/repo/p2mirror`.
 	
 ## Install as download
 
