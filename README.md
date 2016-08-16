@@ -17,7 +17,7 @@ Grab latest from [https://ci.rebaze.io/nexus/#nexus-search;gav~com.rebaze.eclips
 # Usage
 
 ## Mirror P2 Metadata
-	$ p2mirror p2mirror -verbose -application org.eclipse.equinox.p2.artifact.repository.mirrorApplication -source https://bndtools.ci.cloudbees.com/job/bndtools.master/lastSuccessfulBuild/artifact/build/generated/p2 -destination file:/tmp/out
+	$ p2mirror -verbose -application org.eclipse.equinox.p2.artifact.repository.mirrorApplication -source https://bndtools.ci.cloudbees.com/job/bndtools.master/lastSuccessfulBuild/artifact/build/generated/p2 -destination file:/tmp/out
     
 ## Mirror P2 Artifacts
     $ p2mirror -nosplash -verbose -application org.eclipse.equinox.p2.artifact.repository.mirrorApplication -source $P2SRC -destination $P2DEST
