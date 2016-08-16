@@ -26,6 +26,11 @@ Source can be any P2 repo. Destination is a local file url that you want to mirr
 
 # Examples:
 
-Mirror the BNDTools P2 Repository (latest build) to  folder /data:
+Mirror the Eclipse Neon P2 Repository to folder /data:
 
-    ./p2mirror -nosplash -verbose -application org.eclipse.equinox.p2.artifact.repository.mirrorApplication -source https://bndtools.ci.cloudbees.com/job/bndtools.master/lastSuccessfulBuild/artifact/build/generated/p2 -destination file:/data
+    ./p2mirror -nosplash -verbose -application org.eclipse.equinox.p2.artifact.repository.mirrorApplication -source p2mirror -verbose -application org.eclipse.equinox.p2.artifact.repository.mirrorApplication -source http://download.eclipse.org/releases/neon -destination file:/Users/tonit/neonmirror -destination file:/data
+
+Mirror the BNDTools P2 Repository (latest build) to  folder /data:
+    
+        ./p2mirror -nosplash -verbose -application org.eclipse.equinox.p2.artifact.repository.mirrorApplication -source https://bndtools.ci.cloudbees.com/job/bndtools.master/lastSuccessfulBuild/artifact/build/generated/p2 -destination file:/data
+    
